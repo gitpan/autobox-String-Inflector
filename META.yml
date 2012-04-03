@@ -3,9 +3,13 @@ abstract: 'Rails like String Inflector'
 author:
   - 'Ryuta Kamizono <kamipo@gmail.com>'
 build_requires:
-  Test::More: 0
+  ExtUtils::MakeMaker: 6.36
+  Test::More: 0.96
+configure_requires:
+  ExtUtils::MakeMaker: 6.36
 distribution_type: module
-generated_by: 'Module::Install version 0.79'
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,10 +19,13 @@ no_index:
   directory:
     - inc
     - t
+    - xt
 requires:
   Lingua::EN::Inflect::Number: 0
   String::CamelCase: 0
   autobox: 0
 resources:
+  bugtracker: https://github.com/xaicron/p5-autobox-String-Inflector/issues
   license: http://dev.perl.org/licenses/
-version: 0.01
+  repository: https://github.com/xaicron/p5-autobox-String-Inflector
+version: 0.02
